@@ -1,0 +1,15 @@
+<p>
+  <strong>Ingredient:</strong>
+  <%= ingredient.name %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= ingredient.description %>
+</p>
+
+<p>
+	<%= link_to 'Delete Ingredient', [recipe.ingredient, recipe],
+				method: :delete,
+				data: {confirm: 'Are you sure?'} %>
+</p>

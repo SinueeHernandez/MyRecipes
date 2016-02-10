@@ -1,0 +1,23 @@
+<div id="aboutleft">
+<h1>Listing recipes</h1>
+
+<%= link_to 'New Recipe', new_recipe_path %>
+<table border=1>
+  <tr>
+    <th>Name</th>
+    <th>description</th>
+  </tr>
+ 
+  <% @recipes.each do |recipe| %>
+    <tr>
+      <td><%= recipe.name %></td>
+      <td><%= recipe.description %></td>
+      <td><%= link_to 'Show', recipe_path(recipe) %></td>
+      <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+      <td><%= link_to 'destroy', recipe_path(recipe),
+              method: :delete,
+              data: {confirm: 'are you sure?'} %></td>
+    </tr>
+  <% end %>
+</table>
+</div>

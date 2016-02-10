@@ -8,7 +8,33 @@
 </head>
 <body>
 
-<%= yield %>
+<%# this code is for the web header and menu-%>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+    <%#<img src="assets/logo.png" alt="" class="logo">-%>
+    <a class="navbar-brand" >MyRecipes <span class="Italyc"> Share you'r taste for the world</span>...</a>
+</div>
+ <div id="navbar" class="navbar-collapse collapse">
+    <%= nav_bar do %>
+     <%= nav_link 'Welcome', root_path %>
+     <%= nav_link 'Recipes', recipes_path %>
+     <%= nav_link 'About', 'about/index' %>
+     <% end %>
+ </div>
+</nav>
+<%# ends for the web header and menu-%>
+<aside id="maincontent" class="bodywidth clear">
+
+    <%= yield %>
+
+</aside>
 
 </body>
 </html>

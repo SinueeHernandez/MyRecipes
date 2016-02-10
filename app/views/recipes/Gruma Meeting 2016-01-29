@@ -1,0 +1,29 @@
+Filtro de unidad de negocio
+	* Mapear ruta para ligar a Unidad de negocio.  Agregar como casos especiales  
+
+					Unidad de negocio = organización de ventas
+	* Añadir unidad de negocio a  Todas excepto a empleados
+		
+Separar permisos
+	* Separar los casos editar, borrar, crear.
+
+Ordenar la lista de los combos de los filtros, de manera alfabetica por el value
+
+Filtro (kendo) pantalla empleado por ID se queda pensando el kendo.
+
+Empleado Estatus de si continua trabajando en la compañia. 
+
+
+Exportar / Importar
+
+Calculos
+	*Se toman por fechas, y que esten capturados
+	*Ultimo periodo es el ultimo cerrado.
+		*Cancelar el cierre solo se puede el ultimo cerrado
+		*despues se puede recalcular
+
+Dar de alta RelGrupoRutasRutas como catalogo.
+
+
+Mover numero de nomina a AtrVarEmpleados y Eliminar de Empleados
+
